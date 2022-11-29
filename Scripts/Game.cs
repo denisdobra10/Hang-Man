@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,7 +19,8 @@ namespace HangMan.Scripts
         public List<char> usedLetters = new List<char>();
 
         // You may modify the path to the list of words here
-        private readonly string wordsPath = Helper.App.GetApplicationPath() + "//Data//words.txt";
+        //private readonly string wordsPath = Helper.App.GetApplicationPath() + "//Data//words.txt";
+        private readonly string wordsPath = Application.StartupPath + "//Data//words.txt";
         private string word = "";
 
 
